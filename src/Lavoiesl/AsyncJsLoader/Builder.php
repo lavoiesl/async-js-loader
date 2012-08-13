@@ -13,6 +13,7 @@ class Builder
     protected function getLoaderJs()
     {
         $file = __DIR__ . '/Resources/loader.js';
+
         return file_get_contents($file);
     }
 
@@ -33,6 +34,7 @@ class Builder
         $vals = implode(',', array_values($this->vars));
 
         $js = "!function($vars){{$js}}($vals)";
+
         return $this->minify($js);
     }
 
@@ -43,6 +45,7 @@ class Builder
     {
         $js = preg_replace('/^ +/m', '', $js);
         $js = str_replace("\n", '', $js);
+
         return $js;
     }
 }
