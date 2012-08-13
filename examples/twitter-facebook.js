@@ -1,0 +1,1 @@
+!function(d,s){var n,b=d.getElementsByTagName(s)[0];function l(i,c,z){if(!d.getElementById(i)){setTimeout(function(){n=d.createElement(s);n.id=i;n.src=c;b.parentNode.insertBefore(n,b);},z);}}l('twitter-wjs','//platform.twitter.com/widgets.js',400);l('facebook-jssdk','//connect.facebook.net/en_US/all.js#xfbml=1',400)}(document,'script')
