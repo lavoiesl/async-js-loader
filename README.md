@@ -33,6 +33,12 @@ composer.phar install # autoloader
 php build.php twitter facebook > /path/to/you/project/js/async-libs.js
 ```
 
+And add a `<script/>` tag just before the closing tag of `</body>`.
+
+Alternatively, you can copy paste the code in a `document.ready`.
+
+[Working example on jsfiddle](http://jsfiddle.net/7T4e7/)
+
 ## TODO
 
  * Add more libraries (only Twitter and Facebook at the moment).
@@ -40,3 +46,8 @@ php build.php twitter facebook > /path/to/you/project/js/async-libs.js
    * Facebook locale / xfbml
    * Google Maps sensors / api key
 
+## Author
+
+[Sebastien Lavoie](http://blog.lavoie.sl)
+
+[GitHub](https://github.com/lavoiesl/async-js-loader)
