@@ -12,7 +12,7 @@ abstract class Base
         if ($this->id) {
             return $this->id;
         } else {
-            return $this->id = md5($this->getUrl());
+            return $this->id = md5($this->getSrc());
         }
     }
 
